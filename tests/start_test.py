@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring, missing-function-docstring
+
 import pytest
 from httpx import AsyncClient
 from app.main import app  # Import your FastAPI app

@@ -1,4 +1,7 @@
-# conftest.py
+"""
+conftest.py: Pytest configuration and fixtures.
+"""
+# pylint: disable=missing-module-docstring, missing-function-docstring, redefined-outer-name
 import pytest
 from httpx import AsyncClient
 from app.main import app  # Adjust import path as necessary
