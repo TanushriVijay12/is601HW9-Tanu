@@ -75,4 +75,5 @@ async def delete_qr_code_endpoint(qr_filename: str, token: str = Depends(oauth2_
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="QR code not found")
 
     delete_qr_code(qr_code_path)
+    # No need to generate or return any links since the 204 response should not contain a body
     return Response(status_code=status.HTTP_204_NO_CONTENT)
